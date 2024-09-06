@@ -106,6 +106,10 @@ section.projects h1 {
     padding: 0rem ;
 }
 
+.project_txt {
+    padding-bottom: 3rem;
+}
+
 .project_img {
     width: 120px;
     height: 100%;
@@ -138,7 +142,7 @@ section.projects h1 {
     .project_img {
         display: none;
     }
-    .project-txt span {
+    .project_txt span {
         font-size: 11px;
     }
     
