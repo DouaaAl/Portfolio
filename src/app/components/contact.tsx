@@ -5,13 +5,15 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
 
-    const form = useRef();
+    const form = useRef<any>();
 
     const sendEmail = (e: any) =>{
         e.preventDefault();
         emailjs.sendForm('service_5r1yaxk','template_9vsuv5i', form?.current || "", 'hF0P0NW5MNjUvI36F').then((result)=>{
             console.log(result.text)
-            form.current.reset();
+            if (form && form.current){
+                form.current.reset();
+            }
         }, (error)=>{
             console.log(error.text)
         })
