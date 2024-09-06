@@ -106,22 +106,22 @@ section.projects h1 {
     padding: 0rem ;
 }
 
-.project-img {
+.project_img {
     width: 200px;
-    min-height: 200px;
+    height: 200px;
     margin-bottom: -50px;
 }
 
-.project-txt h2 {
+.project_txt h2 {
     font-size: 25px;
 }
 
-.project-txt p {
+.project_txt p {
     font-size: 14px;
 }
 
 
-.project-txt .skills-used img {
+.project_txt .skills_used img {
     width: 70px;
 }
 
@@ -135,7 +135,7 @@ section.projects h1 {
     .project {
         width: 95%;
     }
-    .project-img {
+    .project_img {
         display: none;
     }
     
