@@ -32,7 +32,7 @@ const Projects = () => {
                     <span>Express</span>
                     <span>TailwindCss</span>
                 </div>
-                <Link href="#">
+                <Link className={Styles.project_link} href="#">
                     <span>Visit Website Here</span>
                 </Link>
             </article>

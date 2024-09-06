@@ -96,6 +96,10 @@ section.projects_container {
     margin: 0 7.5% ;
 }
 
+.project_link {
+    padding-bottom: 1rem;
+}
+
 @media screen and (max-width: 730px){
     
 section.projects h1 {
