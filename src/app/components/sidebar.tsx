@@ -8,7 +8,6 @@ import Resume from "../../../public/icons/Resume.png";
 import Phone from "../../../public/icons/Phone.png"
 import Image from 'next/image';
 import "../styles/sidebar.css"
-import resume from '../../../public/resume.pdf'
 
 
 
