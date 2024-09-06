@@ -1,0 +1,124 @@
+.mainpage {
+    background-color: #03045E;
+    width: 100%;
+    margin-left:0;
+    color: #03045E;
+    position: relative;
+    background: url("/main/landscape.png") center/cover no-repeat;
+    background-size: 175%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.landscape {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0.2;
+    height: 100%;
+}
+
+.moon {
+    position: absolute;
+    top: -90px;
+    right: 0;
+    height: 430px;
+    width: 430px;
+    z-index: 1;
+    opacity: 0.4;
+    animation: pulseAnimation 3s infinite alternate;
+}
+
+.shooting_stars {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    width: 80px;
+    z-index: 1;
+    animation: shootingAnimation 10s infinite;
+}
+
+.stars {
+    position: absolute;
+    top: 190px;
+    right: 0;
+    transform: scale(0.7);
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+.planet {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: -10px;
+    left: 5px;
+    z-index: 1;
+    object-fit: contain;
+    transform: scale(1.5);
+    opacity: 0.5;
+    animation: rotateAnimation 5s infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+      opacity: 0.5;
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.1) rotate(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.5) rotate(360deg);
+    }
+  }
+
+
+@keyframes pulseAnimation {
+    0% {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0.65;
+      transform: scale(1.1);
+    }
+  }
+
+
+  @keyframes shootingAnimation {
+    0% {
+        bottom: 350px;
+        right: -20px;
+    }
+    100% {
+        bottom: -90px;
+        right: 150px;
+    }
+  }
+
+@media screen and (max-width: 980px){
+    .mainpage {
+        background-size: 205%;
+    }
+    
+}
+
+@media screen and (max-width: 520px){
+    .mainpage {
+        background-size: 405%;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    .mainpage {
+        background-size: 455%;
+    }
+    
+}
