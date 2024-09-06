@@ -38,6 +38,9 @@ header ul {
 
 
 @media screen and (max-width: 550px){
+    header {
+        height: fit-content;
+    }
     header ul {
         flex-direction: column;
         justify-content: center;
