@@ -43,7 +43,7 @@ section.projects_container {
     display: flex;
     gap: 0rem;
     border-radius: 25px;
-    padding: 0rem 3.5%;
+    padding: 1rem 3.5%;
     padding-left: 0;
 }
 
@@ -107,9 +107,9 @@ section.projects h1 {
 }
 
 .project_img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: -50px;
+    width: 120px;
+    height: 100%;
+    margin-bottom: 0px;
 }
 
 .project_txt h2 {
@@ -138,7 +138,9 @@ section.projects h1 {
     .project_img {
         display: none;
     }
-    
+    .project-txt span {
+        font-size: 11px;
+    }
     
     }
     
