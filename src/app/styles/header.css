@@ -28,3 +28,17 @@ header ul {
     gap: 3rem;
     font-size: 1.5rem;
 }
+
+
+@media screen and (max-width: 700px){
+    header ul {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    header ul {
+        font-size: 1rem;
+    }
+}
